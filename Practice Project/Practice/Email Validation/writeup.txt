@@ -1,0 +1,24 @@
+WRITEUP FOR EMAIL VALIDATION:
+
+
+STEP1: Start
+
+STEP2: Get the array list.
+
+STEP3: Take input from the User
+
+STEP4: Using Regular Expression to validate email
+
+STEP5: Then Create instance of matcher 
+
+STEP6: Using if condition to search the each element of the ArrayList object.
+
+STEP7: Verify whether each element in the array list contains the required string.
+
+STEP8: If so print the elements.
+
+STEP9: If the element does not contain in the ArrayList Object. 
+
+STEP10: It will execute the else part.
+
+STEP11: Stop.

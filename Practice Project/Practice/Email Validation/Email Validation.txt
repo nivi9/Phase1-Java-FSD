@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.*;
+public class EmailProj {
+	
+    public static void main(String[] args) 
+    { 
+    	
+      ArrayList<String> list= new ArrayList<String>();   // using Array list
+     
+      list.add("nivethakamal99@gmail.com");             // adding element in array list
+      list.add("rakesh@gmail.com"); 
+      list.add("sharma@gmail.com"); 
+      list.add("kamal@gmail.com"); 
+      list.add("poonguzhali@gmail.com");
+      list.add("yashu@gmail.com"); 
+      
+        
+      String searchElement;       
+      
+      System.out.println("Search E-mail: ");
+      
+      Scanner scanner = new Scanner(System.in);  // Take input from the user
+      
+      searchElement = scanner.nextLine();
+      
+      String regex = "^(.+)@(.+)$";    //using Regular Expression to validate email
+      
+      Matcher matcher = Pattern.compile(regex).matcher(searchElement);
+      
+      if (matcher.matches() && list.stream().anyMatch(mail -> mail.equals(searchElement)))
+      {
+          System.out.println(searchElement + " ==> is present in the list");
+          
+      } 
+      else 
+      {
+          System.out.println("Not a valid or is not present");
+      }
+                  
+    }
+                
+    }
+    
