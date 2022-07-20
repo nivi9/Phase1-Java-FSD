@@ -1,0 +1,13 @@
+STEPS FOR CREATING ARITHMETIC CALCULATOR IN JAVA
+
+
+STEP 1: Start.
+STEP 2: Declare the Variables num1, num2, operators, result.
+STEP 3: The Scanner class is used to take input from the user.
+STEP 4: Operators specifies the operation to be performed.
+STEP 5:  After that we use switch case to choose from different arithmetic operations like addition, subtraction, multiplication and division to get the desired output.
+STEP 6: Enter two integers as input.
+STEP 7: Perform any Arithmetic Operation.
+STEP 8: Finally, the break statement ends the switch statement.
+STEP 9: Similarly, for different operators, different cases are executed.
+STEP 10: End.
