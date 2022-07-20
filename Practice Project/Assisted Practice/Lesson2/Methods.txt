@@ -1,0 +1,49 @@
+package Lesson2;
+
+public class MethodEx {
+
+		  
+		  public void display1()    // method with no parameter
+		  {   
+			  
+			    System.out.println("Method without parameter");
+		  }
+
+		  // method with single parameter
+		  public void display2(int a) {
+			  
+	
+		    System.out.println("The value of a is : " + a);
+		  }
+
+		  public void add(int a, int b) {
+			  int res = a+b;
+			 
+		    System.out.println("Sum of a + b is : " + res);
+		  }
+		  
+		  public int cube(int d) 
+		  {
+			  
+			  int num = d * d * d;
+			  
+			  System.out.println("Cube: " + num);
+			  
+			  return num;
+			}
+
+		  public static void main(String[] args) {
+		    
+		    
+		    MethodEx obj = new MethodEx(); 
+
+		                                   
+		    obj.display1();					// calling method with no parameter
+		    
+		    obj.display2(100);             // calling method with the single parameter
+		    
+		    obj.add(10,20);               // calling method with the two parameter
+		    
+		    obj.cube(5);  
+		  }
+		}
