@@ -1,0 +1,25 @@
+package Lesson2;
+
+public class CallByValueEx {
+
+	int val= 80;
+	
+		 void callby(int val)   // Method to update value when called in main method
+		{
+
+			this.val = val + 50;
+		}
+		public static void main(String[] args)
+		{
+			
+			CallByValueEx obj = new CallByValueEx();
+			
+			
+			System.out.println("before change Value = " + obj.val);  // Before Calling method
+			
+			obj.callby(80);
+			
+			System.out.println("after change value = " + obj.val);   // after calling  method
+		}
+	}
+
