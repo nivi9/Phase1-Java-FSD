@@ -1,0 +1,39 @@
+﻿                                                                WRITEUP FOR FILE HANDLING
+
+
+
+
+Background of the problem statement:
+
+As a developer, write a Java code to read, write, and append to a file.
+
+
+-> The package named java.nio that can be used to work with files.
+
+-> To create an object of File, we need to import the java.io.File package first. 
+
+-> Once we import the package, we can create objects of file and created a file object named file.
+
+-> The object can be used to work with files and directories.
+
+CREATE A FILE:
+
+-> To create a new file, we can use the createNewFile() method. 
+
+-> If the file is successfully created, it will return "File is Created"
+
+-> If the file already exists in the specified location, it will return "file already exists".
+
+READING FROM A FILE:
+
+-> To read data from the file, we can use subclasses of either InputStream or Reader.
+
+WRITE TO A FILE:
+
+-> We use the FileWriter class along with its write() method in order to write some text to the file.
+
+APPEND A FILE:
+
+-> we can append a string in an existing file using FileWriter which has an option to open a file in append mode. 
+
+-> Java FileWriter class is used to write character-oriented data to a file.
