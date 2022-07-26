@@ -1,0 +1,25 @@
+
+                                                          WRITEUP FOR LONGEST ICREASING SUBSEQUENCE
+
+
+
+
+-> The longest increasing subsequence problem is to find a subsequence of a given sequence in which the subsequence’s elements are in sorted order,
+lowest to highest, and in which the subsequence is as long as possible. 
+
+-> This subsequence is not necessarily contiguous or unique.
+
+
+
+PROCEDURE:
+
+-> Formally, the length of the longest increasing subsequence ending at index i,
+
+-> will be 1 greater than the maximum of length of all longest increasing subsequences ending at indices before i, 
+where arr[j] < arr[i] (j < i).
+
+-> If both the conditions are true
+
+-> then only we update the Longest Increasing Subsequence at array[i] which will be equal to 1 + array[j].
+
+-> The base case of the recursion would be when no items are left.
