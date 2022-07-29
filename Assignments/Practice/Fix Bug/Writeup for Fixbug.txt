@@ -1,0 +1,47 @@
+                                                            WRITE UP FOR FIXING THE BUGS 
+
+
+Background of the problem statement:
+
+You have been assigned a few tasks during the sprint planning. Solving the bugs raised
+by the testing team is one among them. You are given the boilerplate code and are asked
+to complete it by fixing the bugs.
+
+
+STEP 1: Start
+
+STEP 2: SORTING PROCEDURE
+
+A Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on the elements. 
+
+-> The comparison operator is used to decide the new order of elements in the respective data structure.
+
+-> Run two loops – an inner loop and an outer loop.
+
+-> Repeat steps till the outer loop are exhausted.
+
+-> The current element in the inner loop is smaller than its next element, swap the values of the two elements.
+
+
+STEP 3: SEARCHING PROCEDURE IN SEARCH EXPENSES
+
+Linear search is also known as a sequential searching algorithm to find the element within the collection of data.
+The algorithm begins from the first element of the list, starts checking every element until the expected element is found. 
+
+-> Traversing the array
+
+-> Match the key element with array element
+
+-> If key element is found in the arraylist, return the index position of the array element,
+
+-> It will print the element you searched for is found
+
+-> If key element is not found, return -1,
+
+-> It will print the element is not found.
+
+
+
+STEP 4: Closing the Application
+
+STEP 5: End
