@@ -1,0 +1,113 @@
+                                                      WRITE UP FOR VIRTUAL KEY
+
+
+
+
+Project objective: 
+------------------
+
+As a Full Stack Developer, complete the features of the application by planning the development in terms of sprints and then push 
+the source code to the GitHub repository. As this is a prototyped application, the user interaction will be via a command line. 
+
+
+-> Virtual Key Repository is a console based application that helps user in managing files in repository. 
+
+-> User can add, delete, and search a file from the repository. 
+
+-> Also, user can access all the files present in repository in ascending order. 
+
+-> This application is based on file handling concepts.
+
+
+STEP 1: Enter your choice which you want to select
+--------------------------------------------------
+        
+       ->     1. Retrive current filename in Ascending order
+
+       ->     2. Business Level operation Menu.
+
+       ->     3. Exit from the Application
+
+
+1.RETRIVE CURRENT FILE NAME IN ASCENDING ORDER :
+-----------------------------------------------
+            
+-> I have created a new method called Ascending() 
+
+-> In this method ,the isFile() method that checks whether a File object represents an actual file in the filesystem.
+
+-> isDirectory() method checks whether the file is a directory or not  
+
+-> Array.sort() method is used to sort an array iin the Ascending order
+
+-> If the directory is found or matched , then it will sort the file name in ascending order using array.sort() method
+
+-> If the directory is not found, it will print "File not found"              
+
+STEP 2:
+
+2. BUSINESS LEVEL OPERATION :
+-----------------------------
+
+        ->    1: Add a file and its content to the directory 
+        
+        ->    2: Delete a file from directory 
+
+        ->    3: Searching a file and showing the content 
+
+        ->    4: Exit from the below operation and then come back to the main function.
+
+
+1. CREATE A FILE 
+*****************
+
+-> The createNewFile() function is a part of File class in Java . 
+
+-> This function creates new empty file.
+
+-> If the file name is already exist, then it will print "FILE ALREADY EXISTS"
+
+2. DELETE A FILE FROM THE DIRECTORY:
+************************************
+
+-> The Scanner class can take file name from the user.
+
+-> Delete() method is used to delete the file .
+
+-> And it will print "File name deleted successfully"
+
+-> If the file name is not found , it will print "File not found..Please try again"
+
+3. SEARCHING A FILE:
+********************
+
+-> The Scanner class can take file name from the user.
+
+-> File.exists() method tests the existence of the file or directory defined by this abstract pathname.
+
+-> If the searched file is found it will print the file name 
+
+-> And also the file location.
+
+-> If the file name is not found , it will print "Sorry !! File not found"
+
+STEP 3: 
+
+3. EXIT FROM THE APPLICATION:
+-------------------------------
+           
+-> Once the user is perfrom all the operation, the user can close the Virtual locker uisng Exit options.
+                  
+STEP 4:
+
+->In the main method , printing developer name.
+
+-> Using Switch Case , it will print the main menu operations
+
+-> If the user enter the invalid number the it will print "Please enter valid number".
+
+
+
+
+
+
