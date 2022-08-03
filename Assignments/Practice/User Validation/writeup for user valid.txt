@@ -1,0 +1,64 @@
+                                                        WRITEUP FOR USER VALIDATION
+
+Problem Statement:
+
+As a developer, write a program for VALIDATION OF USER LOGIN
+
+-> Using Java, The web pages that serve the purpose of logging into the application, 
+and upon authorized authenticated credentials, the rest of the application screens can be seen. 
+Hence it is much essential to have a login form to accept the inputs from users and then validate the data. 
+For validating the data, we can use javascript at the client-side. 
+
+
+-> Once client-side validations are over, entered credentials are checked against the database stored data.
+ This process can be done only on the server-side. That means those kinds of validations need to be sent as a request
+ to the server and the code needs to be written in Servlet. Usually, as login form credentials are sensitive
+ and should be hidden while passing, it has to get sent as a POST method. 
+ we can design a basic login form and do processing via a servlet. 
+
+-> Create three java class file
+1.Login.java
+2.Logout.java
+3.Dashboard.java
+
+-> HTML file is used to design the login form
+
+Create index.html file
+
+1. LOGIN.JAVA
+-----------
+
+In Login Servlet, 
+
+-> PrintWriter() is used to write a formatted string to the writer using specified arguments and format string.
+It is used to print an object.
+
+-> getParameter() returns the value of a request parameter as a String.
+It returns the value of username and password
+
+
+-> Using if condition to check the userid and password, if username and password matches
+
+Then it will print "Welcome to the user"
+Else it will print "Please try again"
+
+2.LOGOUT.JAVA
+------------
+
+-> HttpSession() Provides a way to identify a user across more than one page request or 
+visit to a Web site and to store information about that user. 
+
+-> The servlet container uses this interface to create a session between an HTTP client and an HTTP server. 
+
+-> if session is not null, it will print "Logged out Successfully"
+
+3.DASHBOARD.JAVA
+----------------
+
+If session is not null, it will print the username .
+
+else, it will print login first.
+
+
+-> Upon successful client-side validation and server-side validation, a web page opens and gives login page.
+-> If user given incorrect credentials then it gives Invalid email and password" And again displays a login page
