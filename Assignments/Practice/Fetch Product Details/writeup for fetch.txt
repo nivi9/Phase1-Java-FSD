@@ -1,0 +1,83 @@
+                                                      WRITEUP FOR RETRIEVE PRODUCT
+                                                    -------------------------------
+
+
+
+Background of the problem statement:
+-----------------------------------
+As a part of developing an e-commerce web application, 
+the admin backend requires a module that can retrieve product information based on the product ID.
+
+
+SERVLET:
+********
+-> Servlets are mainly used in Dynamic web applications which provides dynamic responses to client requests. 
+-> In most cases, Dynamic web applications access a database to provide the client requested data. 
+-> We can use Java standard database connection – JDBC in Servlets to perform database operations. 
+
+Servlet – Database connection:
+******************************
+A Servlet can generate dynamic HTML by retrieving data from the database and sending it back to the client as a response. 
+We can also retrieve the database based on data passed in the client HTTP request.
+
+An HTML form – for the client access
+A Servlet class – to process the client request and generate the response.
+
+
+PROCEDURE:
+**********
+-> I have inserted a few records into the product table. 
+-> And getting the data from the database in servlet and printing it.
+
+I have Created three Servlet files:
+***********************************
+
+1.DBConfig
+2.FetchDBServlet
+3.FilterDB
+
+HTML FILE
+*********
+
+-> index.html
+
+index.html page gets product id from the user and forwards this data to a servlet which is responsible to show the records based on the given id.
+-> Create index.html”.
+-> Here I have simply displaying a submit button to fetch the data from the database.
+-> In the form tag, mentioned the action “fetch” and method “get” to map the URL to a specific servlet class when the form is submitted.
+
+FilterDb:
+*********
+
+doGet():
+
+-> After the initialization of the servlet, when client requests the data to fetch from the database, 
+   the servlet container calls the respective service method to perform the operation.
+
+-> Here we specified the URL with annotation “@WebServlet(“/fetch”)” in our code. 
+   Instead of using annotation, you can also specify the URL mapping in web.xml – Web Deployment descriptor.
+
+-> When the request comes, it maps with the URL specified in the servlet and executes the “doGet()” method 
+   in this servlet as we specified the method as “get” in the HTML.
+
+-> As we need to generate the response and print the fetched data in it, set the response content type as “text/html”
+   to specify which type of data will be sending in the response object.
+
+-> To print the data to the text-output stream, we are using the “PrintWriter” class object
+   using the “getWriter()” method on the response object.
+
+-> Now, we need to display the data in the browser in user understandable and formatted way. 
+   So, format the information using the HTML table tag in the output.
+
+-> As we established the connection to the database, now create the statement object.
+
+-> Construct the select query to fetch the data from the database and execute it.
+
+-> Store the result of the executed query in a result set so that we can retrieve that data into the individual data items in the servlet. 
+
+-> Loop through the result set and print the retrieved data in formatted way to the response.
+
+-> At last, close all the connections to the database to avoid any resource leak.
+
+-> While performing these database operations, if any step fails, it throws “SQLException“, so make sure to handle the exception using try/catch block.
+ 
