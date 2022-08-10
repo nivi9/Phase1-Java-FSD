@@ -1,0 +1,81 @@
+                                                                     Writeup for Adding New Product
+
+
+Project objective:
+******************
+
+Create a servlet-based web application that shows a form to add new products.
+A MySQL database will be created to store product data.
+The form data will be validated, and a row will be added to the database. 
+All database processing will be done using Hibernate.
+
+Background of the problem statement:
+************************************
+  As a part of developing an e-commerce web application, you have to create a 
+database table for storing product information. A form is needed to add new 
+products.
+ The form submission is validated, and a new record is created in the 
+product table.
+
+
+
+Functionalities supported by Hibernate framework:
+*************************************************
+
+-> Hibernate framework support Auto DDL operations.
+
+-> In JDBC manually we have to create table and declare the data-type for each and every column.
+ 
+-> But Hibernate can do DDL operations for you internally like creation of table,drop a table,alter a table etc.
+
+-> Hibernate supports Auto Primary key generation. 
+
+-> It means in JDBC we have to manually set a primary key for a table.
+
+-> But Hibernate can this task for you.
+
+-> Hibernate framework is independent of Database because it supports HQL (Hibernate Query Language) 
+   which is not specific to any database, whereas JDBC is database dependent.
+
+-> In Hibernate, Exception Handling is not mandatory, whereas In JDBC exception handling is mandatory.
+
+-> Hibernate supports Cache Memory whereas JDBC does not support cache memory.
+
+-> Hibernate is a ORM tool means it support Object relational mapping. Whereas JDBC is not object oriented
+   moreover we are dealing with values means primitive data. 
+
+-> In hibernate each record is represented as a Object but in JDBC each record is nothing but a data which is nothing but primitive values.
+
+
+
+For creating the Adding product in the database hibernate application in Eclipse IDE, the following steps are 
+
+1.Create the java project
+2. Add jar files for hibernate
+3. Create the Persistent class
+4. Create the mapping file for Persistent class
+5. Create the Configuration file
+6. Create the class that retrieves or stores the persistent object
+
+
+-> The class product is created to store the product ID, product name and the quantity.
+
+-> A parameterized constructor along with getters and setters are created for this to show the
+model.
+
+-> The Prodc.html is used to get details from the user 
+
+-> The user is asked to enter the product ID, product name and the quantity. The page also
+   contains a submit button which takes the user to the display page where the product details are displayed.
+
+-> Inside index.jpg page, html file is linked to it.
+
+-> It will send the response to servlet ,and we get the configure connection from hibernate.cfg.xml.
+
+-> From the xml file connection is created to the database and the objects created in the servlet are get stored in the table.
+
+-> Finally, the data is stored in the database.
+
+
+
+
