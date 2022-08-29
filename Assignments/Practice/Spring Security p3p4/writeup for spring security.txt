@@ -1,0 +1,57 @@
+								Writeup for Spring Security
+								---------------------------
+
+
+
+
+Project objective: 
+******************
+
+As a developer, build Authentication Provider in Spring Security.
+
+
+Background of the problem statement: 
+************************************
+
+You have been assigned a task by the team to add more flexibility rather than using the standard scenario in building Spring Security.
+
+
+Step 1: First you can create the spring started project from that you can add spring web
+
+Step 2: Add the security Dependency in pom.xml file
+
+Step 3: In that Java folder, we can create one pojo classes contains getters,setters,constructors
+
+Step 4: The entities are(name,password,role)
+
+Step 5: You can create one more java classes for CustomAuthenticationProvider in that you have to 
+
+Step 6:  Add some dummy details based on the admin and user.
+
+Step 7: If the authenticatedUser.isPresent() it will perform the conditions.
+
+Step 8: And then config the admin,user credential using @Configuration Annotation ,
+
+Step 9: These are the url we can give at the runtime
+
+                .antMatchers("/").permitAll()
+                .antMatchers("/protected").hasRole("USER")
+                .antMatchers("/admin").hasRole("ADMIN");
+
+
+Step 10: Then finaly come to the mapping part,we can map all classes and give some 
+	 instruction which is based on the customer perspective.
+             
+             @RestController    
+             @RequestMapping("/")
+             @RequestMapping("/protected") 
+             @RequestMapping("/admin")
+
+Step 11: Application.java class, we can add the componentScan annotation then click run option.
+
+Step 12: While running this project you can give the above format.
+
+ 
+ 
+
+
